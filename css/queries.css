@@ -1,0 +1,64 @@
+@media screen and (max-width : 500px) {
+#restaurants-list li {
+  width: 90%;
+}
+.filter-options select {
+  width: 40%;
+}
+}
+@media screen and (max-width : 965px) {
+  .inside #map-container{
+    height: 10%;
+    position: absolute;
+    width: 100%;
+    display: block;
+    TOP: 130PX;
+    z-index: 0;
+  }
+  .filter-options {
+    padding: 3%;
+  }
+  #restaurant-container, #reviews-container{
+    padding: 0 13% 30px;
+  }
+  #reviews-container{
+    padding-bottom: 60px;
+  }
+  #breadcrumb{
+    width: calc(100% - 80px);
+  }
+  .dataContainer{
+    position: relative;
+    top:  400px;
+    display: block;
+    width: 100%;
+  }
+  .inside #footer{
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width : 965px) {
+.inside #map-container{
+  height: 13%;
+}
+}
+@media screen and (min-width: 500px) and (max-width : 830px) {
+.inside #map-container{
+  height: 13%;
+}
+#restaurants-list li {
+  width: 70%;
+  margin: 20px auto;
+}
+}
+@media screen and (min-width: 830px) and (max-width : 987px) {
+  #restaurants-list li {
+    width: 38%;
+  }
+}
+@media screen and (min-width: 987px) and (max-width : 1144px) {
+  #restaurants-list li {
+    width: 40%;
+  }
+}
