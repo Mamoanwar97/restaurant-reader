@@ -1,13 +1,17 @@
-var staticCacheName = 'mws-restaurant-worker';
+let staticCacheName = 'restaurant-cache';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {
       return cache.addAll([
         './',
+        '/',
+        'restaurant.html',
+        'index.html',
         'js/main.js',
         'js/restaurant_info.js',
         'js/dbhelper.js',
+        'controller.js',
         'css/styles.css',
         'css/queries.css',
         'img/1.jpg',
@@ -34,7 +38,7 @@ self.addEventListener('activate', function(event) {
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.filter(function(cacheName) {
-          return cacheName.startsWith('mws-') &&
+          return cacheName.startsWith('restaurant-') &&
                  cacheName != staticCacheName;
         }).map(function(cacheName) {
           return caches.delete(cacheName);
