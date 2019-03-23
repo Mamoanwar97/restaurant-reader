@@ -7,4 +7,5 @@ if (navigator.serviceWorker) {
 }
 /*it may has an error in serviceWorker but i cant solve it. i searched
 a lot and checked my code several times. it is exactly what we got in the course
-and nothing wrong with it but still got unknown error messages that i cant solve*/
+and i dont why i still get error messages
+with it but still got unknown error messages that i cant solve*/
